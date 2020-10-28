@@ -1,0 +1,12 @@
+Fehler: Konnte das Ausgabeverzeichnis "C:\Users\stoff\source\repos\solaranlage\Production Files\GER" nicht erstellen.
+
+Plot file "C:\Users\stoff\Desktop\ESP32-EVB (Rev.H)\Gerbers\Solaranlage-F_Cu.gbr" created.
+Plot file "C:\Users\stoff\Desktop\ESP32-EVB (Rev.H)\Gerbers\Solaranlage-B_Cu.gbr" created.
+Plot file "C:\Users\stoff\Desktop\ESP32-EVB (Rev.H)\Gerbers\Solaranlage-F_Paste.gbr" created.
+Plot file "C:\Users\stoff\Desktop\ESP32-EVB (Rev.H)\Gerbers\Solaranlage-B_Paste.gbr" created.
+Plot file "C:\Users\stoff\Desktop\ESP32-EVB (Rev.H)\Gerbers\Solaranlage-F_SilkS.gbr" created.
+Plot file "C:\Users\stoff\Desktop\ESP32-EVB (Rev.H)\Gerbers\Solaranlage-B_SilkS.gbr" created.
+Plot file "C:\Users\stoff\Desktop\ESP32-EVB (Rev.H)\Gerbers\Solaranlage-F_Mask.gbr" created.
+Plot file "C:\Users\stoff\Desktop\ESP32-EVB (Rev.H)\Gerbers\Solaranlage-B_Mask.gbr" created.
+Plot file "C:\Users\stoff\Desktop\ESP32-EVB (Rev.H)\Gerbers\Solaranlage-Edge_Cuts.gbr" created.
+Erstelle Gerber Job-Datei "C:\Users\stoff\Desktop\ESP32-EVB (Rev.H)\Gerbers\Solaranlage-job.gbrjob"
