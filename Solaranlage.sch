@@ -2409,17 +2409,6 @@ F 3 "http://www.redrok.com/PNP_BC327_-45V_-800mA_0.625W_Hfe100_TO-92.pdf" H 1310
 	-1   0    0    -1  
 $EndComp
 $Comp
-L MCU_Microchip_ATmega:ATmega644-20PU U7
-U 1 1 5FAB9B61
-P 12550 5150
-F 0 "U7" H 12550 3061 50  0000 C CNN
-F 1 "ATmega644-20PU" H 12550 2970 50  0000 C CNN
-F 2 "Package_DIP:DIP-40_W15.24mm" H 12550 5150 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc2593.pdf" H 12550 5150 50  0001 C CNN
-	1    12550 5150
-	-1   0    0    -1  
-$EndComp
-$Comp
 L Device:C C19
 U 1 1 5FB12E26
 P 22500 5000
@@ -2467,5 +2456,16 @@ F 2 "Package_DIP:DIP-8_W7.62mm" H 16250 10350 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/ne555.pdf" H 16450 10350 50  0001 C CNN
 	1    15600 10750
 	1    0    0    -1  
+$EndComp
+$Comp
+L MCU_Microchip_ATmega:ATmega32-16PU U?
+U 1 1 5FC9465F
+P 12550 5150
+F 0 "U?" H 12550 3061 50  0000 C CNN
+F 1 "ATmega32-16PU" H 12550 2970 50  0000 C CNN
+F 2 "Package_DIP:DIP-40_W15.24mm" H 12550 5150 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc2503.pdf" H 12550 5150 50  0001 C CNN
+	1    12550 5150
+	-1   0    0    -1  
 $EndComp
 $EndSCHEMATC
