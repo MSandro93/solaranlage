@@ -39,9 +39,9 @@ F 3 "~" H 19250 9650 50  0001 C CNN
 	1    19250 9650
 	1    0    0    -1  
 $EndComp
-Text Label 25200 6500 0    50   ~ 0
-RxD
 Text Label 25200 6400 0    50   ~ 0
+RxD
+Text Label 25200 6500 0    50   ~ 0
 TxD
 Wire Wire Line
 	21750 7950 21350 7950
@@ -167,8 +167,6 @@ Text Label 21300 4600 0    50   ~ 0
 \RST
 Wire Wire Line
 	21150 5000 21750 5000
-Wire Wire Line
-	21150 4800 22500 4800
 Text Notes 20750 4350 1    50   ~ 0
 sould be left N.C.\n
 Connection ~ 20550 4250
@@ -440,9 +438,9 @@ Wire Wire Line
 Wire Wire Line
 	24550 8100 24550 8250
 Wire Wire Line
-	25150 6500 25600 6500
+	25150 6400 25600 6400
 Wire Wire Line
-	25600 6400 25150 6400
+	25400 6500 25150 6500
 $Comp
 L Interface_USB:FT232RL U8
 U 1 1 5F704798
@@ -1265,13 +1263,13 @@ Text Notes 6500 3400 0    50   ~ 0
 KE: Temperaturanzeige Kessel Einer-Stelle select\nKZ: Temperaturanzeige Kessel Zehner-Stelle select\nKH: Temperaturanzeige Kessel Hunderter-Stelle select\nDE: Temperaturanzeige Dach Einer-Stelle select\nDZ: Temperaturanzeige Dach Zehner-Stelle select\nDH: Temperaturanzeige Dach Hunderter-Stelle select\n
 Text Label 11650 3650 0    50   ~ 0
 KE
-Text Label 11650 3750 0    50   ~ 0
-KZ
 Text Label 11650 3850 0    50   ~ 0
-KH
-Text Label 11650 3950 0    50   ~ 0
-DE
+KZ
 Text Label 11650 4050 0    50   ~ 0
+KH
+Text Label 11650 3750 0    50   ~ 0
+DE
+Text Label 11650 3950 0    50   ~ 0
 DZ
 Text Label 11650 4150 0    50   ~ 0
 DH
@@ -1955,9 +1953,9 @@ Wire Wire Line
 	11050 5750 11950 5750
 Wire Wire Line
 	15250 3450 15900 3450
-Text GLabel 25600 6400 2    50   Input ~ 0
+Text GLabel 25400 6500 2    50   Input ~ 0
 TxD
-Text GLabel 25600 6500 2    50   Output ~ 0
+Text GLabel 25600 6400 2    50   Output ~ 0
 RxD
 Text GLabel 10950 6250 0    50   Input ~ 0
 TxD
@@ -2285,7 +2283,7 @@ U 1 1 5FCBD478
 P 11150 11100
 F 0 "C15" V 11400 11050 50  0000 L CNN
 F 1 "10n" V 11300 11050 50  0000 L CNN
-F 2 "Capacitor_THT:C_Rect_L9.0mm_W2.5mm_P7.50mm_MKT" H 11188 10950 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 11188 10950 50  0001 C CNN
 F 3 "~" H 11150 11100 50  0001 C CNN
 F 4 "" V 10950 11150 50  0001 C CNN "Ordering Code"
 	1    11150 11100
@@ -2307,7 +2305,7 @@ U 1 1 5F8D7367
 P 14500 11250
 F 0 "C1" H 14615 11296 50  0000 L CNN
 F 1 "10n" H 14615 11205 50  0000 L CNN
-F 2 "Capacitor_THT:C_Rect_L9.0mm_W2.5mm_P7.50mm_MKT" H 14538 11100 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 14538 11100 50  0001 C CNN
 F 3 "~" H 14500 11250 50  0001 C CNN
 F 4 "" V 14300 11300 50  0001 C CNN "Ordering Code"
 	1    14500 11250
@@ -2340,8 +2338,8 @@ $Comp
 L pspice:INDUCTOR L2
 U 1 1 5FD19EB6
 P 13250 2800
-F 0 "L2" V 13204 2756 50  0000 R CNN
-F 1 "INDUCTOR" V 13295 2756 50  0000 R CNN
+F 0 "L2" V 13200 3000 50  0000 R CNN
+F 1 "INDUCTOR" V 13350 3250 50  0000 R CNN
 F 2 "Inductor_THT:L_Radial_D10.0mm_P5.00mm_Fastron_07P" H 13250 2800 50  0001 C CNN
 F 3 "~" H 13250 2800 50  0001 C CNN
 	1    13250 2800
@@ -2408,38 +2406,6 @@ F 3 "http://www.redrok.com/PNP_BC327_-45V_-800mA_0.625W_Hfe100_TO-92.pdf" H 1310
 	1    13100 11100
 	-1   0    0    -1  
 $EndComp
-$Comp
-L Device:C C19
-U 1 1 5FB12E26
-P 22500 5000
-F 0 "C19" H 22615 5046 50  0000 L CNN
-F 1 "10p" H 22615 4955 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 22538 4850 50  0001 C CNN
-F 3 "~" H 22500 5000 50  0001 C CNN
-	1    22500 5000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5FB64444
-P 22500 5600
-AR Path="/5F670D5B/5FB64444" Ref="#PWR?"  Part="1" 
-AR Path="/5F671D57/5FB64444" Ref="#PWR?"  Part="1" 
-AR Path="/5FB64444" Ref="#PWR02"  Part="1" 
-F 0 "#PWR02" H 22500 5350 50  0001 C CNN
-F 1 "GND" H 22505 5427 50  0000 C CNN
-F 2 "" H 22500 5600 50  0001 C CNN
-F 3 "" H 22500 5600 50  0001 C CNN
-	1    22500 5600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	22500 4800 22500 4850
-Wire Wire Line
-	22500 5150 22500 5600
-Connection ~ 22500 4800
-Wire Wire Line
-	22500 4800 22800 4800
 Wire Wire Line
 	15100 10950 14950 10950
 Wire Wire Line
@@ -2458,14 +2424,16 @@ F 3 "http://www.ti.com/lit/ds/symlink/ne555.pdf" H 16450 10350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MCU_Microchip_ATmega:ATmega32-16PU U?
+L MCU_Microchip_ATmega:ATmega32-16PU U7
 U 1 1 5FC9465F
 P 12550 5150
-F 0 "U?" H 12550 3061 50  0000 C CNN
+F 0 "U7" H 12550 3061 50  0000 C CNN
 F 1 "ATmega32-16PU" H 12550 2970 50  0000 C CNN
 F 2 "Package_DIP:DIP-40_W15.24mm" H 12550 5150 50  0001 C CIN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc2503.pdf" H 12550 5150 50  0001 C CNN
 	1    12550 5150
 	-1   0    0    -1  
 $EndComp
+Wire Wire Line
+	21150 4800 22800 4800
 $EndSCHEMATC
