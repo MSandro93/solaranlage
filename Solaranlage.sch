@@ -2034,8 +2034,6 @@ Wire Wire Line
 	14850 11900 14850 12000
 Wire Wire Line
 	13250 12350 13250 12000
-Wire Wire Line
-	13250 12000 13850 12000
 Connection ~ 14850 12000
 Wire Wire Line
 	14850 12000 14850 12550
@@ -2200,38 +2198,16 @@ F 3 "" H 13850 13000 50  0001 C CNN
 	1    13850 13000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	13850 12750 13850 13000
-Wire Wire Line
-	13850 12350 13850 12000
-Connection ~ 13850 12000
-Wire Wire Line
-	13850 12000 14850 12000
-Text GLabel 14200 12550 2    50   Input ~ 0
-\RST
-Wire Wire Line
-	14200 12550 14150 12550
 $Comp
 L Transistor_BJT:2N3904 Q1
 U 1 1 5FF728D8
 P 13150 12550
 F 0 "Q1" H 13100 12750 50  0000 L CNN
 F 1 "2N3904" H 12900 12400 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_HandSolder" H 13350 12475 50  0001 L CIN
+F 2 "Package_TO_SOT_THT:TO-92L_Wide" H 13350 12475 50  0001 L CIN
 F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 13150 12550 50  0001 L CNN
 	1    13150 12550
 	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_BJT:BC328 Q2
-U 1 1 5FF9EB7A
-P 13950 12550
-F 0 "Q2" H 14141 12596 50  0000 L CNN
-F 1 "BC328" H 14141 12505 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_HandSolder" H 14150 12475 50  0001 L CIN
-F 3 "http://www.redrok.com/PNP_BC327_-45V_-800mA_0.625W_Hfe100_TO-92.pdf" H 13950 12550 50  0001 L CNN
-	1    13950 12550
-	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	15950 12400 15800 12400
@@ -2511,4 +2487,26 @@ Wire Wire Line
 Wire Wire Line
 	5350 3450 13000 3450
 Connection ~ 4700 4700
+$Comp
+L Device:Jumper JP1
+U 1 1 6018D25C
+P 13850 12500
+F 0 "JP1" V 13804 12627 50  0000 L CNN
+F 1 "Jumper" V 13895 12627 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 13850 12500 50  0001 C CNN
+F 3 "~" H 13850 12500 50  0001 C CNN
+	1    13850 12500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13250 12000 13850 12000
+Wire Wire Line
+	13850 12200 13850 12000
+Connection ~ 13850 12000
+Wire Wire Line
+	13850 12000 14850 12000
+Wire Wire Line
+	13850 12800 13850 13000
+Text Notes 13950 12300 0    50   ~ 0
+Watchdog disable\n
 $EndSCHEMATC
