@@ -652,8 +652,6 @@ Wire Wire Line
 	8800 8000 5800 8000
 Wire Wire Line
 	11700 6850 12050 6850
-Wire Wire Line
-	12050 6850 12250 6850
 Connection ~ 12050 6850
 Wire Wire Line
 	12050 7200 12050 6850
@@ -671,8 +669,6 @@ F 3 "" H 12050 7700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 11300 6850 0    50   ~ 0
-PWM_2
-Text Label 12600 6850 3    50   ~ 0
 PWM
 $Comp
 L Device:R R19
@@ -684,19 +680,6 @@ F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 12120 7259
 F 3 "~" H 12050 7350 50  0001 C CNN
 	1    12050 7350
 	1    0    0    -1  
-$EndComp
-Text Notes 11550 8250 0    50   ~ 0
-C10 block Gleichanteil. Wenn sich MCU aufhängt und deshlab nur noch 5V, oder 0V\nausgibt, blockt das dieser C und der Pulldown sorgt dafür, dass die pumpe sicher\naus ist und bleibt. Danke Rolf ;)\n
-$Comp
-L Device:C C10
-U 1 1 5FE38FCD
-P 12400 6850
-F 0 "C10" V 12550 6800 50  0000 L CNN
-F 1 "10n" V 12650 6800 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 12438 6700 50  0001 C CNN
-F 3 "~" H 12400 6850 50  0001 C CNN
-	1    12400 6850
-	0    -1   1    0   
 $EndComp
 Text Label 12550 6650 0    50   ~ 0
 Heart_LED
@@ -2142,8 +2125,6 @@ F 4 "" V 15150 12750 50  0001 C CNN "Ordering Code"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	12550 6850 13000 6850
-Wire Wire Line
 	10350 6650 10350 6900
 Wire Wire Line
 	14300 4050 14300 3050
@@ -2509,4 +2490,6 @@ Wire Wire Line
 	13850 12800 13850 13000
 Text Notes 13950 12300 0    50   ~ 0
 Watchdog disable\n
+Wire Wire Line
+	12050 6850 13000 6850
 $EndSCHEMATC
