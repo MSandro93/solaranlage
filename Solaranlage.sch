@@ -2491,5 +2491,18 @@ Wire Wire Line
 Text Notes 13950 12300 0    50   ~ 0
 Watchdog disable\n
 Wire Wire Line
-	12050 6850 13000 6850
+	12050 6850 12400 6850
+$Comp
+L Device:R R21
+U 1 1 60379EAF
+P 12550 6850
+F 0 "R21" V 12450 6800 50  0000 C CNN
+F 1 "1k" V 12650 6850 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 12480 6850 50  0001 C CNN
+F 3 "~" H 12550 6850 50  0001 C CNN
+	1    12550 6850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12700 6850 13000 6850
 $EndSCHEMATC
