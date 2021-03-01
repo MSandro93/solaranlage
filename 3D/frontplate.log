@@ -1,0 +1,39 @@
+STEP in Solid Edge konvertieren
+Datum: Montag,März 01,2021 02:07
+Quelldatei: C:\Users\mstof\source\repos\solaranlage\3D\frontplate.step
+Autor: An Author
+Organisation: A Company
+Ausgangssystem: KiCad to STEP converter
+
+Hardware:
+Prozessor: Intel(R) Xeon(R) CPU E5-1620 v3 @ 3.50GHz
+Betriebssystem: Windows 8 Professional
+Installierter Speicher: 15.92 GB
+
+Software-Informationen
+Parasolid-Version: 30.1.256
+PSBodyShop-Version: 30.1.94
+Step-Adapterversion: 4.0.40
+Solid Edge-Version: 219.00.01.006 x64
+
+Step-Importoptionen
+Facettierte Körper importieren: Ein
+Prüfkörper importieren: Aus
+Kurven importieren: Ein
+DoNotSave importieren: Ein
+Mehrere Körper als Einzelteildatei importieren: Ein
+Flächenvernähung importieren: Ein
+Boolesche Körper importieren: Ein
+Basisformelement erstellen: Ein
+Geometrie vereinfachen: Ein
+Druckkurven importieren: Ein
+Führung importieren: C:
+Flächenvernähung importieren: Ein
+Flächen importieren: Ein
+Ausgabepfad importieren: C:\Users\mstof\source\repos\solaranlage\3D
+Aktivieren des standardmäßigen Ausgabepfads importieren: Ein
+Pfad importieren: 
+
+Übersetzen in Parasolid-Datentypen...
+Konvertierungsvorgang ist abgeschlossen
+Zur Übersetzung und Nachbearbeitung erforderte Gesamtzeit:00 : 00 : 01
