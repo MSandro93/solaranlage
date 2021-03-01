@@ -231,7 +231,7 @@
   (gr_circle (center 103.251 92.202) (end 105.001 92.202) (layer Edge.Cuts) (width 0.05) (tstamp 603C25E3))
   (gr_circle (center 114.046 92.202) (end 115.796 92.202) (layer Edge.Cuts) (width 0.05) (tstamp 603C2515))
   (gr_circle (center 114.173 102.489) (end 115.923 102.489) (layer Edge.Cuts) (width 0.05))
-  (gr_circle (center 139.008 123.413) (end 145.508 123.413) (layer Edge.Cuts) (width 0.05))
+  (gr_circle (center 139.008 123.413) (end 146.008 123.413) (layer Edge.Cuts) (width 0.05))
   (gr_line (start 38.933 45.208) (end 238.933 45.208) (layer Edge.Cuts) (width 0.05) (tstamp 603C2085))
   (gr_text "200mm x 105mm" (at 57.531 160.147) (layer Eco2.User) (tstamp 5F83BAFE)
     (effects (font (size 4 3) (thickness 0.3)))

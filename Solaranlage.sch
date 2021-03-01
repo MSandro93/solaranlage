@@ -285,6 +285,7 @@ F 0 "J5" H 8607 10367 50  0000 C CNN
 F 1 "USB_B" H 8607 10276 50  0000 C CNN
 F 2 "Connector_USB:USB_B_Lumberg_2411_02_Horizontal" H 8700 9850 50  0001 C CNN
 F 3 " ~" H 8700 9850 50  0001 C CNN
+F 4 "Conrad: 1883654-62" H 8550 9900 50  0001 C CNN "Ordering"
 	1    8550 9900
 	1    0    0    -1  
 $EndComp
@@ -316,6 +317,7 @@ F 0 "J4" H 1407 13867 50  0000 C CNN
 F 1 "USB_B" H 1407 13776 50  0000 C CNN
 F 2 "Connector_USB:USB_B_Lumberg_2411_02_Horizontal" H 1500 13350 50  0001 C CNN
 F 3 " ~" H 1500 13350 50  0001 C CNN
+F 4 "Conrad: 1883654-62" H 1350 13400 50  0001 C CNN "Ordering"
 	1    1350 13400
 	1    0    0    -1  
 $EndComp
