@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 52)
+    (drawings 57)
     (tracks 0)
     (zones 0)
     (modules 5)
@@ -34,7 +34,7 @@
   )
 
   (setup
-    (last_trace_width 1.5)
+    (last_trace_width 0.25)
     (user_trace_width 0.25)
     (user_trace_width 0.5)
     (user_trace_width 1.5)
@@ -106,7 +106,7 @@
   (module dummy:void (layer F.Cu) (tedit 603C1284) (tstamp 603F12F2)
     (at 225.631 149.479)
     (path /641D9EF1)
-    (fp_text reference MECH5 (at 9.192 2.159) (layer F.SilkS) hide
+    (fp_text reference MECH5 (at 9.573 7.874) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value "Socket for ATMega32 (U7)" (at 0 -0.5) (layer F.Fab)
@@ -117,7 +117,7 @@
   (module dummy:void (layer F.Cu) (tedit 603C1284) (tstamp 603F12EE)
     (at 224.131 150.979)
     (path /640D3CA4)
-    (fp_text reference MECH4 (at 4.596 0.659) (layer F.SilkS) hide
+    (fp_text reference MECH4 (at 4.469 6.501) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value "Socket shift register (U12)" (at 0 -0.5) (layer F.Fab)
@@ -128,7 +128,7 @@
   (module dummy:void (layer F.Cu) (tedit 603C1284) (tstamp 603F12EA)
     (at 224.131 149.479)
     (path /6405078D)
-    (fp_text reference MECH3 (at 4.596 -0.254) (layer F.SilkS) hide
+    (fp_text reference MECH3 (at 4.342 5.715) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value "Socket for buffer (U11)" (at 0 -0.5) (layer F.Fab)
@@ -139,7 +139,7 @@
   (module dummy:void (layer F.Cu) (tedit 603C1284) (tstamp 603F12E6)
     (at 222.631 150.979)
     (path /63E83912)
-    (fp_text reference MECH2 (at 0 0.5) (layer F.SilkS) hide
+    (fp_text reference MECH2 (at -0.254 6.628) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value "Socket for NE555 (U10)" (at 0 -0.5) (layer F.Fab)
@@ -150,7 +150,7 @@
   (module dummy:void (layer F.Cu) (tedit 603C1284) (tstamp 603F12E2)
     (at 222.631 149.479)
     (path /63E81666)
-    (fp_text reference MECH1 (at 0 -0.254) (layer F.SilkS) hide
+    (fp_text reference MECH1 (at -0.127 5.842) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value "Socket for NE555 (U10)" (at 0 -0.5) (layer F.Fab)
@@ -158,15 +158,22 @@
     )
   )
 
-  (gr_circle (center 229.588 140.708) (end 231.188 140.708) (layer Edge.Cuts) (width 0.12) (tstamp 603C3D65))
+  (gr_text "Note: Conrad: 183592 - 62 as grips (x2)" (at 86.106 166.751) (layer Eco2.User)
+    (effects (font (size 3 3) (thickness 0.15)))
+  )
+  (gr_circle (center 223.088 111.958) (end 224.288 111.958) (layer Edge.Cuts) (width 0.05) (tstamp 603C4798))
+  (gr_circle (center 223.088 83.458) (end 224.288 83.458) (layer Edge.Cuts) (width 0.05) (tstamp 603C4793))
+  (gr_circle (center 54.778 111.958) (end 55.978 111.958) (layer Edge.Cuts) (width 0.05) (tstamp 603C46D3))
+  (gr_circle (center 54.778 83.458) (end 55.978 83.458) (layer Edge.Cuts) (width 0.05))
+  (gr_circle (center 234.433 145.708) (end 236.033 145.708) (layer Edge.Cuts) (width 0.12) (tstamp 603C3D65))
   (gr_circle (center 222.588 133.708) (end 224.188 133.708) (layer Edge.Cuts) (width 0.12) (tstamp 603C3CF1))
   (gr_circle (center 153.008 123.413) (end 154.608 123.413) (layer Edge.Cuts) (width 0.12) (tstamp 603C3C96))
   (gr_circle (center 125.008 123.413) (end 126.608 123.413) (layer Edge.Cuts) (width 0.12) (tstamp 603C3C96))
-  (gr_circle (center 229.588 54.708) (end 231.188 54.708) (layer Edge.Cuts) (width 0.12) (tstamp 603C3C65))
+  (gr_circle (center 234.433 49.708) (end 236.033 49.708) (layer Edge.Cuts) (width 0.12) (tstamp 603C3C65))
   (gr_circle (center 222.588 61.708) (end 224.188 61.708) (layer Edge.Cuts) (width 0.12) (tstamp 603C3C23))
-  (gr_circle (center 48.278 141.216) (end 49.878 141.216) (layer Edge.Cuts) (width 0.12) (tstamp 603C3C19))
+  (gr_circle (center 43.433 146.216) (end 45.033 146.216) (layer Edge.Cuts) (width 0.12) (tstamp 603CDCDC))
   (gr_circle (center 55.278 134.216) (end 56.878 134.216) (layer Edge.Cuts) (width 0.12) (tstamp 603C3BC6))
-  (gr_circle (center 48.278 54.708) (end 49.878 54.708) (layer Edge.Cuts) (width 0.12) (tstamp 603C3BAD))
+  (gr_circle (center 43.433 49.708) (end 45.033 49.708) (layer Edge.Cuts) (width 0.12) (tstamp 603CDCDF))
   (gr_circle (center 55.278 61.708) (end 56.878 61.708) (layer Edge.Cuts) (width 0.12) (tstamp 603C3B62))
   (gr_text Manuell/Automatik (at 80.724572 75.819) (layer F.SilkS) (tstamp 603C3515)
     (effects (font (size 2 2) (thickness 0.15)))
@@ -225,12 +232,12 @@
   (gr_circle (center 114.046 92.202) (end 115.796 92.202) (layer Edge.Cuts) (width 0.05) (tstamp 603C2515))
   (gr_circle (center 114.173 102.489) (end 115.923 102.489) (layer Edge.Cuts) (width 0.05))
   (gr_circle (center 139.008 123.413) (end 145.508 123.413) (layer Edge.Cuts) (width 0.05))
-  (gr_line (start 43.778 50.208) (end 234.088 50.208) (layer Edge.Cuts) (width 0.05) (tstamp 603C2085))
-  (gr_text "191mm x 95mm" (at 61.722 152.019) (layer Eco2.User) (tstamp 5F83BAFE)
+  (gr_line (start 38.933 45.208) (end 238.933 45.208) (layer Edge.Cuts) (width 0.05) (tstamp 603C2085))
+  (gr_text "200mm x 105mm" (at 57.531 160.147) (layer Eco2.User) (tstamp 5F83BAFE)
     (effects (font (size 4 3) (thickness 0.3)))
   )
-  (gr_line (start 43.778 145.208) (end 43.778 50.208) (layer Edge.Cuts) (width 0.05) (tstamp 5F124799))
-  (gr_line (start 234.088 145.208) (end 43.778 145.208) (layer Edge.Cuts) (width 0.05))
-  (gr_line (start 234.088 50.208) (end 234.088 145.208) (layer Edge.Cuts) (width 0.05) (tstamp 5F150866))
+  (gr_line (start 38.933 150.208) (end 38.933 45.208) (layer Edge.Cuts) (width 0.05) (tstamp 5F124799))
+  (gr_line (start 238.933 150.208) (end 38.933 150.208) (layer Edge.Cuts) (width 0.05) (tstamp 603CDA1A))
+  (gr_line (start 238.933 45.208) (end 238.933 150.208) (layer Edge.Cuts) (width 0.05) (tstamp 5F150866))
 
 )
