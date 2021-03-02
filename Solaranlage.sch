@@ -723,7 +723,7 @@ $EndComp
 Text GLabel 18950 3450 0    50   Input ~ 0
 SW1
 $Comp
-L Solaranlage-rescue:Rotary_Encoder_Switch_Panasonic_EVE-QDBRL416B-Device SW1
+L Solaranlage:Rotary_Encoder_Switch_Panasonic_EVE-QDBRL416B-Device SW1
 U 1 1 5FAD84A2
 P 19700 3550
 F 0 "SW1" H 19850 3850 50  0000 C CNN
