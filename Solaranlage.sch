@@ -278,7 +278,7 @@ Wire Wire Line
 Wire Wire Line
 	8550 10300 8550 10400
 $Comp
-L Solaranlage-rescue:USB_B-Connector J5
+L Solaranlage:USB_B-Connector J5
 U 1 1 5F70CF6B
 P 8550 9900
 F 0 "J5" H 8607 10367 50  0000 C CNN
@@ -310,7 +310,7 @@ Wire Wire Line
 Wire Wire Line
 	1350 13800 1350 13900
 $Comp
-L Solaranlage-rescue:USB_B-Connector J4
+L Solaranlage:USB_B-Connector J4
 U 1 1 5F70A7FD
 P 1350 13400
 F 0 "J4" H 1407 13867 50  0000 C CNN
@@ -566,40 +566,40 @@ PWM2
 Text Label 12150 6650 0    50   ~ 0
 Heart_LED
 Wire Wire Line
-	10650 7050 10650 7200
+	10350 7050 10350 7200
 $Comp
 L Device:R R18
 U 1 1 5FDE6938
-P 10650 6900
-F 0 "R18" H 10720 6946 50  0000 L CNN
-F 1 "560" H 10720 6855 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 10720 6809 50  0001 L CNN
-F 3 "~" H 10650 6900 50  0001 C CNN
-	1    10650 6900
+P 10350 6900
+F 0 "R18" H 10420 6946 50  0000 L CNN
+F 1 "560" H 10420 6855 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 10420 6809 50  0001 L CNN
+F 3 "~" H 10350 6900 50  0001 C CNN
+	1    10350 6900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10650 7500 10650 7700
+	10350 7500 10350 7700
 $Comp
 L power:GND #PWR0106
 U 1 1 5FD2A3D0
-P 10650 7700
-F 0 "#PWR0106" H 10650 7450 50  0001 C CNN
-F 1 "GND" H 10655 7527 50  0000 C CNN
-F 2 "" H 10650 7700 50  0001 C CNN
-F 3 "" H 10650 7700 50  0001 C CNN
-	1    10650 7700
+P 10350 7700
+F 0 "#PWR0106" H 10350 7450 50  0001 C CNN
+F 1 "GND" H 10355 7527 50  0000 C CNN
+F 2 "" H 10350 7700 50  0001 C CNN
+F 3 "" H 10350 7700 50  0001 C CNN
+	1    10350 7700
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED D2
 U 1 1 5FCF85FA
-P 10650 7350
-F 0 "D2" V 10650 7450 50  0000 C CNN
-F 1 "LED_gruen" V 10550 7550 50  0000 C CNN
-F 2 "LED_THT:LED_D5.0mm" H 10650 7350 50  0001 C CNN
-F 3 "~" H 10650 7350 50  0001 C CNN
-	1    10650 7350
+P 10350 7350
+F 0 "D2" V 10350 7450 50  0000 C CNN
+F 1 "LED_gruen" V 10250 7550 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm" H 10350 7350 50  0001 C CNN
+F 3 "~" H 10350 7350 50  0001 C CNN
+	1    10350 7350
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
@@ -2012,7 +2012,7 @@ F 4 "" V 4600 10950 50  0001 C CNN "Ordering Code"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10650 6650 10650 6750
+	10350 6650 10350 6750
 Wire Wire Line
 	14000 4050 14000 3050
 Connection ~ 14000 4050
@@ -2323,7 +2323,7 @@ Wire Wire Line
 Wire Wire Line
 	14450 3850 14450 4200
 Wire Wire Line
-	10650 6650 12700 6650
+	10350 6650 12700 6650
 Wire Wire Line
 	12700 3550 5450 3550
 Wire Wire Line
@@ -2938,8 +2938,8 @@ F 4 "Conrad: 140823 - 62" V 6750 13450 50  0001 C CNN "Ordering"
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	11250 6850 12700 6850
-Text GLabel 11250 6850 0    50   Output ~ 0
+	11550 6850 12700 6850
+Text GLabel 11550 6850 0    50   Output ~ 0
 PWM
 Text GLabel 9950 12850 2    50   Input ~ 0
 PWM
@@ -3145,7 +3145,7 @@ P 20200 10150
 F 0 "U12" H 19950 10750 50  0000 C CNN
 F 1 "74HC595" H 19950 9450 50  0000 C CNN
 F 2 "Package_DIP:DIP-16_W7.62mm" H 20200 10150 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H 20200 10150 50  0001 C CNN
+F 3 "${KIPRJMOD}\\datasheets\\74HC595.pdf" H 20200 10150 50  0001 C CNN
 F 4 "Reichel: 74HC 595" H 20200 10150 50  0001 C CNN "Ordering"
 	1    20200 10150
 	1    0    0    -1  
@@ -3207,10 +3207,6 @@ Wire Wire Line
 	19800 10250 19500 10250
 Text GLabel 19500 10250 0    50   Input ~ 0
 SR_LATCH
-Text GLabel 19500 10350 0    50   Input ~ 0
-SR_OE
-Wire Wire Line
-	19800 10350 19500 10350
 Wire Wire Line
 	19800 9750 19500 9750
 Text GLabel 19500 9750 0    50   Input ~ 0
@@ -3322,11 +3318,9 @@ SR_LATCH
 Text Label 12150 5950 0    50   ~ 0
 SR_LATCH
 Wire Wire Line
-	12700 6750 11550 6750
+	12700 6750 11250 6750
 Text Label 12150 6750 0    50   ~ 0
-SR_OE
-Text GLabel 11550 6750 0    50   Output ~ 0
-SR_OE
+?
 Connection ~ 11150 9600
 Wire Wire Line
 	11150 9600 11600 9600
@@ -3350,7 +3344,7 @@ F 3 "http://www.ti.com/lit/ds/symlink/ne555.pdf" H 6750 10000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Solaranlage-rescue:IC-sockets MECH1
+L Solaranlage:IC-sockets MECH1
 U 1 1 63E81666
 P 13800 13200
 F 0 "MECH1" H 13928 13246 50  0000 L CNN
@@ -3362,7 +3356,7 @@ F 4 "Conrad: 189600 - 62" H 13800 13200 50  0001 C CNN "Ordering"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Solaranlage-rescue:IC-sockets MECH2
+L Solaranlage:IC-sockets MECH2
 U 1 1 63E83912
 P 13800 13600
 F 0 "MECH2" H 13928 13646 50  0000 L CNN
@@ -3374,7 +3368,7 @@ F 4 "Conrad: 189600 - 62" H 13800 13600 50  0001 C CNN "Ordering"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Solaranlage-rescue:IC-sockets MECH3
+L Solaranlage:IC-sockets MECH3
 U 1 1 6405078D
 P 15200 13200
 F 0 "MECH3" H 15328 13246 50  0000 L CNN
@@ -3386,7 +3380,7 @@ F 4 "Conrad: 89626 - 62" H 15200 13200 50  0001 C CNN "Ordering"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Solaranlage-rescue:IC-sockets MECH4
+L Solaranlage:IC-sockets MECH4
 U 1 1 640D3CA4
 P 15200 13600
 F 0 "MECH4" H 15328 13646 50  0000 L CNN
@@ -3398,7 +3392,7 @@ F 4 "Conrad: 89626 - 62" H 15200 13600 50  0001 C CNN "Ordering"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Solaranlage-rescue:IC-sockets MECH5
+L Solaranlage:IC-sockets MECH5
 U 1 1 641D9EF1
 P 16650 13200
 F 0 "MECH5" H 16778 13246 50  0000 L CNN
@@ -3407,6 +3401,66 @@ F 2 "dummy:void" H 16550 13350 50  0001 C CNN
 F 3 "" H 16550 13350 50  0001 C CNN
 F 4 "Conrad: 183839 - 62" H 16650 13200 50  0001 C CNN "Ordering"
 	1    16650 13200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	19800 10350 18950 10350
+Wire Wire Line
+	18950 10350 18950 11150
+$Comp
+L power:GND #PWR0110
+U 1 1 604ADA4B
+P 18950 11150
+F 0 "#PWR0110" H 18950 10900 50  0001 C CNN
+F 1 "GND" H 18955 10977 50  0000 C CNN
+F 2 "" H 18950 11150 50  0001 C CNN
+F 3 "" H 18950 11150 50  0001 C CNN
+	1    18950 11150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x03 J7
+U 1 1 6050B64A
+P 10750 7350
+F 0 "J7" H 10750 7150 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 11100 7450 50  0001 C CNN
+F 2 "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_Type171_RT13703HBWC_1x03_P7.50mm_Horizontal" H 10750 7350 50  0001 C CNN
+F 3 "~" H 10750 7350 50  0001 C CNN
+	1    10750 7350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10950 7350 11250 7350
+Wire Wire Line
+	11250 7350 11250 6750
+Wire Wire Line
+	10950 7450 11000 7450
+Wire Wire Line
+	11000 7450 11000 7750
+$Comp
+L power:GND #PWR0119
+U 1 1 607A2F9A
+P 11000 7750
+F 0 "#PWR0119" H 11000 7500 50  0001 C CNN
+F 1 "GND" H 11005 7577 50  0000 C CNN
+F 2 "" H 11000 7750 50  0001 C CNN
+F 3 "" H 11000 7750 50  0001 C CNN
+	1    11000 7750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10950 7250 11000 7250
+Wire Wire Line
+	11000 7250 11000 7000
+$Comp
+L power:+5V #PWR0120
+U 1 1 608F3E8E
+P 11000 7000
+F 0 "#PWR0120" H 11000 6850 50  0001 C CNN
+F 1 "+5V" H 11015 7173 50  0000 C CNN
+F 2 "" H 11000 7000 50  0001 C CNN
+F 3 "" H 11000 7000 50  0001 C CNN
+	1    11000 7000
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
