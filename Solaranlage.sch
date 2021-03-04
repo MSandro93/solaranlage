@@ -2884,7 +2884,7 @@ F 0 "D11" V 6704 13530 50  0000 L CNN
 F 1 "D_TVS" V 6795 13530 50  0000 L CNN
 F 2 "Diode_THT:D_DO-201_P3.81mm_Vertical_KathodeUp" H 6750 13450 50  0001 C CNN
 F 3 "${KIPRJMOD}\\datasheets\\TVS_P6KE6.8A.pdf" H 6750 13450 50  0001 C CNN
-F 4 "140823 - 62" V 6750 13450 50  0001 C CNN "Ordering"
+F 4 "140810-62" V 6750 13450 50  0001 C CNN "Ordering"
 F 5 "Conrad" V 6750 13450 50  0001 C CNN "Supplier"
 	1    6750 13450
 	0    1    1    0   
@@ -2923,7 +2923,7 @@ F 0 "D8" V 1704 4580 50  0000 L CNN
 F 1 "D_TVS" V 1795 4580 50  0000 L CNN
 F 2 "Diode_THT:D_DO-201_P3.81mm_Vertical_KathodeUp" H 1750 4500 50  0001 C CNN
 F 3 "${KIPRJMOD}\\datasheets\\TVS_P6KE6.8A.pdf" H 1750 4500 50  0001 C CNN
-F 4 "140823-62" V 1750 4500 50  0001 C CNN "Ordering"
+F 4 "140810-62" V 1750 4500 50  0001 C CNN "Ordering"
 F 5 "Conrad" V 1750 4500 50  0001 C CNN "Supplier"
 	1    1750 4500
 	0    1    1    0   
@@ -2954,7 +2954,7 @@ F 0 "D9" V 1704 6730 50  0000 L CNN
 F 1 "D_TVS" V 1795 6730 50  0000 L CNN
 F 2 "Diode_THT:D_DO-201_P3.81mm_Vertical_KathodeUp" H 1750 6650 50  0001 C CNN
 F 3 "${KIPRJMOD}\\datasheets\\TVS_P6KE6.8A.pdf" H 1750 6650 50  0001 C CNN
-F 4 "140823-62" V 1750 6650 50  0001 C CNN "Ordering"
+F 4 "140810-62" V 1750 6650 50  0001 C CNN "Ordering"
 F 5 "Conrad" V 1750 6650 50  0001 C CNN "Supplier"
 	1    1750 6650
 	0    1    1    0   
@@ -3020,7 +3020,7 @@ F 0 "D10" V 9304 10180 50  0000 L CNN
 F 1 "D_TVS" V 9395 10180 50  0000 L CNN
 F 2 "Diode_THT:D_DO-201_P3.81mm_Vertical_KathodeUp" H 9350 10100 50  0001 C CNN
 F 3 "${KIPRJMOD}\\datasheets\\TVS_P6KE6.8A.pdf" H 9350 10100 50  0001 C CNN
-F 4 "140823-62" V 9350 10100 50  0001 C CNN "Ordering"
+F 4 "140810-62" V 9350 10100 50  0001 C CNN "Ordering"
 F 5 "Conrad" V 9350 10100 50  0001 C CNN "Supplier"
 	1    9350 10100
 	0    1    1    0   
@@ -3311,7 +3311,7 @@ F 0 "D14" V 10454 7130 50  0000 L CNN
 F 1 "D_TVS" V 10545 7130 50  0000 L CNN
 F 2 "Diode_THT:D_DO-201_P3.81mm_Vertical_KathodeUp" H 10500 7050 50  0001 C CNN
 F 3 "${KIPRJMOD}\\datasheets\\TVS_P6KE6.8A.pdf" H 10500 7050 50  0001 C CNN
-F 4 "140823 - 62" V 10500 7050 50  0001 C CNN "Ordering"
+F 4 "140810-62" V 10500 7050 50  0001 C CNN "Ordering"
 F 5 "Conrad" V 10500 7050 50  0001 C CNN "Supplier"
 	1    10500 7050
 	0    1    1    0   
@@ -3969,6 +3969,4 @@ F 3 "~" H 13800 15050 50  0001 C CNN
 	1    13800 15050
 	1    0    0    -1  
 $EndComp
-Text Notes 550  5350 0    79   ~ 0
-TODO: 1mA leakage current of TVS diodes at 5,8V semms to be a Problem.\nChose 13V types? Their leakage current would be 1 uA 
 $EndSCHEMATC
