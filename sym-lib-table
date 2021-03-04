@@ -1,3 +1,0 @@
-(sym_lib_table
-  (lib (name Solaranlage)(type Legacy)(uri ${KIPRJMOD}/libs/Solaranlage.lib)(options "")(descr ""))
-)
