@@ -3080,16 +3080,14 @@ F 5 "Conrad" H 11500 9650 50  0001 C CNN "Supplier"
 	1    11500 9650
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	19850 5400 20500 5400
 Text GLabel 20500 5700 2    50   Output ~ 0
-temp_dach_ind
+k_ind
 Text GLabel 20500 5600 2    50   Output ~ 0
-temp_keller_ind
+mode_ind
 Text GLabel 20500 5500 2    50   Output ~ 0
-delta1_ind
+temp_keller_ind
 Text GLabel 20500 5400 2    50   Output ~ 0
-delta2_ind
+temp_dach_ind
 Wire Wire Line
 	19850 5500 20500 5500
 Wire Wire Line
@@ -3099,9 +3097,9 @@ Wire Wire Line
 Wire Wire Line
 	19850 5800 20500 5800
 Text GLabel 20500 5800 2    50   Output ~ 0
-k_ind
+delta2_ind
 Text GLabel 20500 5900 2    50   Output ~ 0
-mode_ind
+delta1_ind
 Wire Wire Line
 	19850 5900 20500 5900
 Wire Wire Line
@@ -3135,17 +3133,17 @@ Wire Wire Line
 Text GLabel 18750 5600 0    50   Input ~ 0
 SR_CLOCK
 Text GLabel 15050 9200 0    50   Input ~ 0
-temp_dach_ind
-Text GLabel 15050 9300 0    50   Input ~ 0
-temp_keller_ind
-Text GLabel 15050 9400 0    50   Input ~ 0
-delta1_ind
-Text GLabel 15050 9500 0    50   Input ~ 0
-delta2_ind
-Text GLabel 15050 9100 0    50   Input ~ 0
 k_ind
-Text GLabel 15050 9000 0    50   Input ~ 0
+Text GLabel 15050 9300 0    50   Input ~ 0
 mode_ind
+Text GLabel 15050 9400 0    50   Input ~ 0
+temp_keller_ind
+Text GLabel 15050 9500 0    50   Input ~ 0
+temp_dach_ind
+Text GLabel 15050 9100 0    50   Input ~ 0
+delta2_ind
+Text GLabel 15050 9000 0    50   Input ~ 0
+delta1_ind
 Wire Wire Line
 	12600 5250 11200 5250
 Text GLabel 11200 5250 0    50   Output ~ 0
@@ -3958,19 +3956,21 @@ F 5 "Reichelt" H 3050 10100 50  0001 C CNN "Supplier"
 	1    3050 10100
 	1    0    0    -1  
 $EndComp
-$Comp
-L Mechanical:MountingHole_Pad H6
-U 1 1 5F28C079
-P 13800 15050
-F 0 "H6" H 13900 15096 50  0000 L CNN
-F 1 "MountingHole" H 13900 15005 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" H 13800 15050 50  0001 C CNN
-F 3 "~" H 13800 15050 50  0001 C CNN
-	1    13800 15050
-	1    0    0    -1  
-$EndComp
 Text Notes 15100 13450 0    50   ~ 0
 Socket shift register (U12)
 Text Notes 13700 13450 0    50   ~ 0
 Socket for NE555 (U10)
+Wire Wire Line
+	19850 5400 20500 5400
+$Comp
+L Mechanical:MountingHole_Pad H6
+U 1 1 60578916
+P 13800 15050
+F 0 "H6" H 13900 15096 50  0000 L CNN
+F 1 "MountingHole" H 13900 15005 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 13800 15050 50  0001 C CNN
+F 3 "~" H 13800 15050 50  0001 C CNN
+	1    13800 15050
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
